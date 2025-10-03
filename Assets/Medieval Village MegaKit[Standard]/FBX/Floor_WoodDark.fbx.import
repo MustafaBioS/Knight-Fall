@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dwoo0bbv3k8pv"
-path="res://.godot/imported/Floor_WoodDark.fbx-3fc007c4aca6f177956402dfb822e313.scn"
+path="res://.godot/imported/Floor_WoodDark.fbx-f7a2936ab531a50277893598d30017f5.scn"
 
 [deps]
 
-source_file="res://Medieval Village MegaKit[Standard]/FBX/Floor_WoodDark.fbx"
-dest_files=["res://.godot/imported/Floor_WoodDark.fbx-3fc007c4aca6f177956402dfb822e313.scn"]
+source_file="res://Assets/Medieval Village MegaKit[Standard]/FBX/Floor_WoodDark.fbx"
+dest_files=["res://.godot/imported/Floor_WoodDark.fbx-f7a2936ab531a50277893598d30017f5.scn"]
 
 [params]
 

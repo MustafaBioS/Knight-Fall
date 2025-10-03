@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://egjbw8x1uxfk"
-path="res://.godot/imported/Roof_Log.fbx-ef59f8a4c44874a1d6ce9db961dd6bce.scn"
+path="res://.godot/imported/Roof_Log.fbx-96f8507bb88614d7bf04c0439c587ec0.scn"
 
 [deps]
 
-source_file="res://Medieval Village MegaKit[Standard]/FBX/Roof_Log.fbx"
-dest_files=["res://.godot/imported/Roof_Log.fbx-ef59f8a4c44874a1d6ce9db961dd6bce.scn"]
+source_file="res://Assets/Medieval Village MegaKit[Standard]/FBX/Roof_Log.fbx"
+dest_files=["res://.godot/imported/Roof_Log.fbx-96f8507bb88614d7bf04c0439c587ec0.scn"]
 
 [params]
 

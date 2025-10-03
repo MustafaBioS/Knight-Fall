@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bmrcrdh4ihvxf"
-path="res://.godot/imported/Overhang_Roof_UnevenBricks.fbx-fdd4a32d5a37b27580c99ae599995029.scn"
+path="res://.godot/imported/Overhang_Roof_UnevenBricks.fbx-f95e28cbf888db204da9e6a7b7cf32e5.scn"
 
 [deps]
 
-source_file="res://Medieval Village MegaKit[Standard]/FBX/Overhang_Roof_UnevenBricks.fbx"
-dest_files=["res://.godot/imported/Overhang_Roof_UnevenBricks.fbx-fdd4a32d5a37b27580c99ae599995029.scn"]
+source_file="res://Assets/Medieval Village MegaKit[Standard]/FBX/Overhang_Roof_UnevenBricks.fbx"
+dest_files=["res://.godot/imported/Overhang_Roof_UnevenBricks.fbx-f95e28cbf888db204da9e6a7b7cf32e5.scn"]
 
 [params]
 

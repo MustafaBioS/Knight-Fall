@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cgjis80bpv1w1"
-path="res://.godot/imported/Roof_Dormer_RoundTile.fbx-62364d21f32e148f3696c5b04a32f840.scn"
+path="res://.godot/imported/Roof_Dormer_RoundTile.fbx-7fb549c095c597d9ef74d2005a3eb0a7.scn"
 
 [deps]
 
-source_file="res://Medieval Village MegaKit[Standard]/FBX/Roof_Dormer_RoundTile.fbx"
-dest_files=["res://.godot/imported/Roof_Dormer_RoundTile.fbx-62364d21f32e148f3696c5b04a32f840.scn"]
+source_file="res://Assets/Medieval Village MegaKit[Standard]/FBX/Roof_Dormer_RoundTile.fbx"
+dest_files=["res://.godot/imported/Roof_Dormer_RoundTile.fbx-7fb549c095c597d9ef74d2005a3eb0a7.scn"]
 
 [params]
 

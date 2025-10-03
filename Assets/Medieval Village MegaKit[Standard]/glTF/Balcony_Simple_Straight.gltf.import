@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://om3isax6cj2u"
-path="res://.godot/imported/Balcony_Simple_Straight.gltf-3dc567d12f7bd252ca5f9a8acb22981f.scn"
+path="res://.godot/imported/Balcony_Simple_Straight.gltf-b425472500cbabd6b8ca88158d0ee5ce.scn"
 
 [deps]
 
-source_file="res://Medieval Village MegaKit[Standard]/glTF/Balcony_Simple_Straight.gltf"
-dest_files=["res://.godot/imported/Balcony_Simple_Straight.gltf-3dc567d12f7bd252ca5f9a8acb22981f.scn"]
+source_file="res://Assets/Medieval Village MegaKit[Standard]/glTF/Balcony_Simple_Straight.gltf"
+dest_files=["res://.godot/imported/Balcony_Simple_Straight.gltf-b425472500cbabd6b8ca88158d0ee5ce.scn"]
 
 [params]
 

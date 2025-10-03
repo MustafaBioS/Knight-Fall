@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://b2ebwvigiia4d"
-path="res://.godot/imported/Floor_WoodDark_OverhangCorner2.fbx-951873ddc6d4c8faf3f48f1ffe13c3c2.scn"
+path="res://.godot/imported/Floor_WoodDark_OverhangCorner2.fbx-1f4ceb9376873bf47986b672863565b5.scn"
 
 [deps]
 
-source_file="res://Medieval Village MegaKit[Standard]/FBX/Floor_WoodDark_OverhangCorner2.fbx"
-dest_files=["res://.godot/imported/Floor_WoodDark_OverhangCorner2.fbx-951873ddc6d4c8faf3f48f1ffe13c3c2.scn"]
+source_file="res://Assets/Medieval Village MegaKit[Standard]/FBX/Floor_WoodDark_OverhangCorner2.fbx"
+dest_files=["res://.godot/imported/Floor_WoodDark_OverhangCorner2.fbx-1f4ceb9376873bf47986b672863565b5.scn"]
 
 [params]
 

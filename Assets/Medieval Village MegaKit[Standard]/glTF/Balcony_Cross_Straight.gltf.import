@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://d3asyqw6qs20p"
-path="res://.godot/imported/Balcony_Cross_Straight.gltf-066fbce3fefdc7ff2d5e0662eb99ac06.scn"
+path="res://.godot/imported/Balcony_Cross_Straight.gltf-8991d1306c9ddec502c36cd81b6c1fa4.scn"
 
 [deps]
 
-source_file="res://Medieval Village MegaKit[Standard]/glTF/Balcony_Cross_Straight.gltf"
-dest_files=["res://.godot/imported/Balcony_Cross_Straight.gltf-066fbce3fefdc7ff2d5e0662eb99ac06.scn"]
+source_file="res://Assets/Medieval Village MegaKit[Standard]/glTF/Balcony_Cross_Straight.gltf"
+dest_files=["res://.godot/imported/Balcony_Cross_Straight.gltf-8991d1306c9ddec502c36cd81b6c1fa4.scn"]
 
 [params]
 

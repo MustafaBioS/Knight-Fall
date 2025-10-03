@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://5yqqpsmlx107"
-path="res://.godot/imported/Overhang_RoofIncline_Plaster.fbx-472c4b63cb5506feb3b0e4bbc12beac2.scn"
+path="res://.godot/imported/Overhang_RoofIncline_Plaster.fbx-778e682e9b275dbd86d58a0206f60f35.scn"
 
 [deps]
 
-source_file="res://Medieval Village MegaKit[Standard]/FBX/Overhang_RoofIncline_Plaster.fbx"
-dest_files=["res://.godot/imported/Overhang_RoofIncline_Plaster.fbx-472c4b63cb5506feb3b0e4bbc12beac2.scn"]
+source_file="res://Assets/Medieval Village MegaKit[Standard]/FBX/Overhang_RoofIncline_Plaster.fbx"
+dest_files=["res://.godot/imported/Overhang_RoofIncline_Plaster.fbx-778e682e9b275dbd86d58a0206f60f35.scn"]
 
 [params]
 

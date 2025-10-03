@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dsjw3ilqwj6q6"
-path="res://.godot/imported/Window_Wide_Flat1.fbx-2b8e60c20f302f198811c842c4cc3002.scn"
+path="res://.godot/imported/Window_Wide_Flat1.fbx-74a56b46f21b110bba7c50be1fe3e0c3.scn"
 
 [deps]
 
-source_file="res://Medieval Village MegaKit[Standard]/FBX/Window_Wide_Flat1.fbx"
-dest_files=["res://.godot/imported/Window_Wide_Flat1.fbx-2b8e60c20f302f198811c842c4cc3002.scn"]
+source_file="res://Assets/Medieval Village MegaKit[Standard]/FBX/Window_Wide_Flat1.fbx"
+dest_files=["res://.godot/imported/Window_Wide_Flat1.fbx-74a56b46f21b110bba7c50be1fe3e0c3.scn"]
 
 [params]
 

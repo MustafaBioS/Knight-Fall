@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://f8gcbxhfwbsl"
-path="res://.godot/imported/HoleCover_90Half.gltf-a108c4c2fbea549f8bd723936e94c980.scn"
+path="res://.godot/imported/HoleCover_90Half.gltf-dcd97f6ae62de12738814bbef694d06c.scn"
 
 [deps]
 
-source_file="res://Medieval Village MegaKit[Standard]/glTF/HoleCover_90Half.gltf"
-dest_files=["res://.godot/imported/HoleCover_90Half.gltf-a108c4c2fbea549f8bd723936e94c980.scn"]
+source_file="res://Assets/Medieval Village MegaKit[Standard]/glTF/HoleCover_90Half.gltf"
+dest_files=["res://.godot/imported/HoleCover_90Half.gltf-dcd97f6ae62de12738814bbef694d06c.scn"]
 
 [params]
 

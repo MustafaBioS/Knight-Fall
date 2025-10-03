@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ciaju8v3d2yy5"
-path="res://.godot/imported/HoleCover_90Stairs.fbx-72e67ae488d421a0f02dad41de86819a.scn"
+path="res://.godot/imported/HoleCover_90Stairs.fbx-34178fd4ae05ecde64a75b0c8a913a7c.scn"
 
 [deps]
 
-source_file="res://Medieval Village MegaKit[Standard]/FBX/HoleCover_90Stairs.fbx"
-dest_files=["res://.godot/imported/HoleCover_90Stairs.fbx-72e67ae488d421a0f02dad41de86819a.scn"]
+source_file="res://Assets/Medieval Village MegaKit[Standard]/FBX/HoleCover_90Stairs.fbx"
+dest_files=["res://.godot/imported/HoleCover_90Stairs.fbx-34178fd4ae05ecde64a75b0c8a913a7c.scn"]
 
 [params]
 

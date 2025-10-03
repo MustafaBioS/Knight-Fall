@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://djpslcke6l762"
-path="res://.godot/imported/Wall_BottomCover.fbx-51ad625ad1b1232b4223d165a0024aa9.scn"
+path="res://.godot/imported/Wall_BottomCover.fbx-cb18ec1a1914a4dcdcfe2d9c4bfcbbf2.scn"
 
 [deps]
 
-source_file="res://Medieval Village MegaKit[Standard]/FBX/Wall_BottomCover.fbx"
-dest_files=["res://.godot/imported/Wall_BottomCover.fbx-51ad625ad1b1232b4223d165a0024aa9.scn"]
+source_file="res://Assets/Medieval Village MegaKit[Standard]/FBX/Wall_BottomCover.fbx"
+dest_files=["res://.godot/imported/Wall_BottomCover.fbx-cb18ec1a1914a4dcdcfe2d9c4bfcbbf2.scn"]
 
 [params]
 

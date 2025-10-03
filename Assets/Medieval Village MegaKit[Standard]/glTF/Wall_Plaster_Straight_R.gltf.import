@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://btbnm8ag1i4rr"
-path="res://.godot/imported/Wall_Plaster_Straight_R.gltf-45d0c310941a26f8d48b4dc1fa482a9f.scn"
+path="res://.godot/imported/Wall_Plaster_Straight_R.gltf-1cfad47ee85545525d4eb072a035c9cc.scn"
 
 [deps]
 
-source_file="res://Medieval Village MegaKit[Standard]/glTF/Wall_Plaster_Straight_R.gltf"
-dest_files=["res://.godot/imported/Wall_Plaster_Straight_R.gltf-45d0c310941a26f8d48b4dc1fa482a9f.scn"]
+source_file="res://Assets/Medieval Village MegaKit[Standard]/glTF/Wall_Plaster_Straight_R.gltf"
+dest_files=["res://.godot/imported/Wall_Plaster_Straight_R.gltf-1cfad47ee85545525d4eb072a035c9cc.scn"]
 
 [params]
 

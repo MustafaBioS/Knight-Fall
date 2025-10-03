@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://f38t1qqjyx4b"
-path="res://.godot/imported/Roof_2x4_RoundTile.gltf-f4cd816813de08b0789a74ad49d9c7fd.scn"
+path="res://.godot/imported/Roof_2x4_RoundTile.gltf-4eba046067bd8d01e9b562b0e60c7c8d.scn"
 
 [deps]
 
-source_file="res://Medieval Village MegaKit[Standard]/glTF/Roof_2x4_RoundTile.gltf"
-dest_files=["res://.godot/imported/Roof_2x4_RoundTile.gltf-f4cd816813de08b0789a74ad49d9c7fd.scn"]
+source_file="res://Assets/Medieval Village MegaKit[Standard]/glTF/Roof_2x4_RoundTile.gltf"
+dest_files=["res://.godot/imported/Roof_2x4_RoundTile.gltf-4eba046067bd8d01e9b562b0e60c7c8d.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bcur6xx11d0qg"
-path="res://.godot/imported/Overhang_Plaster_Corner.fbx-02613ec940a4d2784345699b6ac2ba2a.scn"
+path="res://.godot/imported/Overhang_Plaster_Corner.fbx-fdc1a6b7c38ce7cf375271d1e7fa91f5.scn"
 
 [deps]
 
-source_file="res://Medieval Village MegaKit[Standard]/FBX/Overhang_Plaster_Corner.fbx"
-dest_files=["res://.godot/imported/Overhang_Plaster_Corner.fbx-02613ec940a4d2784345699b6ac2ba2a.scn"]
+source_file="res://Assets/Medieval Village MegaKit[Standard]/FBX/Overhang_Plaster_Corner.fbx"
+dest_files=["res://.godot/imported/Overhang_Plaster_Corner.fbx-fdc1a6b7c38ce7cf375271d1e7fa91f5.scn"]
 
 [params]
 

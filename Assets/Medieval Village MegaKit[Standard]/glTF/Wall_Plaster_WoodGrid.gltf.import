@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c7kamdinxwlwh"
-path="res://.godot/imported/Wall_Plaster_WoodGrid.gltf-3d7998f3d171e237cf021cace5ae46fa.scn"
+path="res://.godot/imported/Wall_Plaster_WoodGrid.gltf-fbd78c6c0e6654b5d6edde12277655b7.scn"
 
 [deps]
 
-source_file="res://Medieval Village MegaKit[Standard]/glTF/Wall_Plaster_WoodGrid.gltf"
-dest_files=["res://.godot/imported/Wall_Plaster_WoodGrid.gltf-3d7998f3d171e237cf021cace5ae46fa.scn"]
+source_file="res://Assets/Medieval Village MegaKit[Standard]/glTF/Wall_Plaster_WoodGrid.gltf"
+dest_files=["res://.godot/imported/Wall_Plaster_WoodGrid.gltf-fbd78c6c0e6654b5d6edde12277655b7.scn"]
 
 [params]
 
