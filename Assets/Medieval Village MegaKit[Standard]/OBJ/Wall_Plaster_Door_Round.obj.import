@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ot1rhljij3da"
+path="res://.godot/imported/Wall_Plaster_Door_Round.obj-7df50aed89f25efb8f3439923c009ffc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Wall_Plaster_Door_Round.obj-7df50aed89f25efb8f3439923c009ffc.mesh"]
+
+source_file="res://Assets/Medieval Village MegaKit[Standard]/OBJ/Wall_Plaster_Door_Round.obj"
+dest_files=["res://.godot/imported/Wall_Plaster_Door_Round.obj-7df50aed89f25efb8f3439923c009ffc.mesh", "res://.godot/imported/Wall_Plaster_Door_Round.obj-7df50aed89f25efb8f3439923c009ffc.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
