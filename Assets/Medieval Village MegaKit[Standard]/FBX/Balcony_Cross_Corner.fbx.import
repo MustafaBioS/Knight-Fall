@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://b3pxm670dspp3"
-path="res://.godot/imported/Balcony_Cross_Corner.fbx-5715736f8f64c7ee4d45c1ba6b193b49.scn"
+path="res://.godot/imported/Balcony_Cross_Corner.fbx-01dd58944257fa44cdf4c3a2a3b6ba3e.scn"
 
 [deps]
 
-source_file="res://Medieval Village MegaKit[Standard]/FBX/Balcony_Cross_Corner.fbx"
-dest_files=["res://.godot/imported/Balcony_Cross_Corner.fbx-5715736f8f64c7ee4d45c1ba6b193b49.scn"]
+source_file="res://Assets/Medieval Village MegaKit[Standard]/FBX/Balcony_Cross_Corner.fbx"
+dest_files=["res://.godot/imported/Balcony_Cross_Corner.fbx-01dd58944257fa44cdf4c3a2a3b6ba3e.scn"]
 
 [params]
 

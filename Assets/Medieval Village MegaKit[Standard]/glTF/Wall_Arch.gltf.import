@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cn3wewvdkhjyb"
-path="res://.godot/imported/Wall_Arch.gltf-74eed6e58e8819f4d64e16f6567586a0.scn"
+path="res://.godot/imported/Wall_Arch.gltf-8e94d50e13820e6d2447ab0ae393b188.scn"
 
 [deps]
 
-source_file="res://Medieval Village MegaKit[Standard]/glTF/Wall_Arch.gltf"
-dest_files=["res://.godot/imported/Wall_Arch.gltf-74eed6e58e8819f4d64e16f6567586a0.scn"]
+source_file="res://Assets/Medieval Village MegaKit[Standard]/glTF/Wall_Arch.gltf"
+dest_files=["res://.godot/imported/Wall_Arch.gltf-8e94d50e13820e6d2447ab0ae393b188.scn"]
 
 [params]
 

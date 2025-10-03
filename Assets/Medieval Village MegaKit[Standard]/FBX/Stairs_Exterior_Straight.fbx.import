@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://o0ruefrwxbmk"
-path="res://.godot/imported/Stairs_Exterior_Straight.fbx-32d9d8d45af8a702a907050d2dad6cf9.scn"
+path="res://.godot/imported/Stairs_Exterior_Straight.fbx-385aa0731932a60d094bed7e81c5473c.scn"
 
 [deps]
 
-source_file="res://Medieval Village MegaKit[Standard]/FBX/Stairs_Exterior_Straight.fbx"
-dest_files=["res://.godot/imported/Stairs_Exterior_Straight.fbx-32d9d8d45af8a702a907050d2dad6cf9.scn"]
+source_file="res://Assets/Medieval Village MegaKit[Standard]/FBX/Stairs_Exterior_Straight.fbx"
+dest_files=["res://.godot/imported/Stairs_Exterior_Straight.fbx-385aa0731932a60d094bed7e81c5473c.scn"]
 
 [params]
 

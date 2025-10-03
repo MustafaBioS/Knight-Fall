@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dwefpfwbxtlmg"
-path="res://.godot/imported/Stair_Interior_Rails.gltf-2b7e9ff8d5e5dc665f60cafd5c9a15a7.scn"
+path="res://.godot/imported/Stair_Interior_Rails.gltf-5cf982929210957b4e906bef0fe9b603.scn"
 
 [deps]
 
-source_file="res://Medieval Village MegaKit[Standard]/glTF/Stair_Interior_Rails.gltf"
-dest_files=["res://.godot/imported/Stair_Interior_Rails.gltf-2b7e9ff8d5e5dc665f60cafd5c9a15a7.scn"]
+source_file="res://Assets/Medieval Village MegaKit[Standard]/glTF/Stair_Interior_Rails.gltf"
+dest_files=["res://.godot/imported/Stair_Interior_Rails.gltf-5cf982929210957b4e906bef0fe9b603.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cgktkytf1d5mw"
-path="res://.godot/imported/Wall_BottomCover.gltf-8347d31fae6c21b12f3aa527d9e32334.scn"
+path="res://.godot/imported/Wall_BottomCover.gltf-5c475c1b855d655b23aea2e602766f9b.scn"
 
 [deps]
 
-source_file="res://Medieval Village MegaKit[Standard]/glTF/Wall_BottomCover.gltf"
-dest_files=["res://.godot/imported/Wall_BottomCover.gltf-8347d31fae6c21b12f3aa527d9e32334.scn"]
+source_file="res://Assets/Medieval Village MegaKit[Standard]/glTF/Wall_BottomCover.gltf"
+dest_files=["res://.godot/imported/Wall_BottomCover.gltf-5c475c1b855d655b23aea2e602766f9b.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ef7xta26njdc"
-path="res://.godot/imported/Overhang_Side_UnevenBrick_Long_R.gltf-b51de2380be3b58dd7dfa73ad87a7e54.scn"
+path="res://.godot/imported/Overhang_Side_UnevenBrick_Long_R.gltf-ab3f9c6fc67219dc1c3a35a35cff2033.scn"
 
 [deps]
 
-source_file="res://Medieval Village MegaKit[Standard]/glTF/Overhang_Side_UnevenBrick_Long_R.gltf"
-dest_files=["res://.godot/imported/Overhang_Side_UnevenBrick_Long_R.gltf-b51de2380be3b58dd7dfa73ad87a7e54.scn"]
+source_file="res://Assets/Medieval Village MegaKit[Standard]/glTF/Overhang_Side_UnevenBrick_Long_R.gltf"
+dest_files=["res://.godot/imported/Overhang_Side_UnevenBrick_Long_R.gltf-ab3f9c6fc67219dc1c3a35a35cff2033.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ciyqvj4i4kxwk"
-path="res://.godot/imported/Wall_Plaster_Door_Flat.gltf-b44d5b4eb126498719386b9b4d2ffcb6.scn"
+path="res://.godot/imported/Wall_Plaster_Door_Flat.gltf-ba9345c5229eaffe4a9bebf2a888a8a9.scn"
 
 [deps]
 
-source_file="res://Medieval Village MegaKit[Standard]/glTF/Wall_Plaster_Door_Flat.gltf"
-dest_files=["res://.godot/imported/Wall_Plaster_Door_Flat.gltf-b44d5b4eb126498719386b9b4d2ffcb6.scn"]
+source_file="res://Assets/Medieval Village MegaKit[Standard]/glTF/Wall_Plaster_Door_Flat.gltf"
+dest_files=["res://.godot/imported/Wall_Plaster_Door_Flat.gltf-ba9345c5229eaffe4a9bebf2a888a8a9.scn"]
 
 [params]
 

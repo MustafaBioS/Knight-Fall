@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://deknvaw1c0d5j"
-path="res://.godot/imported/Prop_WoodenFence_Extension1.fbx-69b0cf2a09637f0d9a8ac4c759bd2ba4.scn"
+path="res://.godot/imported/Prop_WoodenFence_Extension1.fbx-a957eae4b9ead8708d9ac875ded48165.scn"
 
 [deps]
 
-source_file="res://Medieval Village MegaKit[Standard]/FBX/Prop_WoodenFence_Extension1.fbx"
-dest_files=["res://.godot/imported/Prop_WoodenFence_Extension1.fbx-69b0cf2a09637f0d9a8ac4c759bd2ba4.scn"]
+source_file="res://Assets/Medieval Village MegaKit[Standard]/FBX/Prop_WoodenFence_Extension1.fbx"
+dest_files=["res://.godot/imported/Prop_WoodenFence_Extension1.fbx-a957eae4b9ead8708d9ac875ded48165.scn"]
 
 [params]
 

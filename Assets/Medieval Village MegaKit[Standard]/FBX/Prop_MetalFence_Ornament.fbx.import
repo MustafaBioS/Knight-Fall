@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dmbjftgpunc1f"
-path="res://.godot/imported/Prop_MetalFence_Ornament.fbx-52835b122c426d523a7655c67a393284.scn"
+path="res://.godot/imported/Prop_MetalFence_Ornament.fbx-e0b69ab0ac8690d9343aa251f261cc0a.scn"
 
 [deps]
 
-source_file="res://Medieval Village MegaKit[Standard]/FBX/Prop_MetalFence_Ornament.fbx"
-dest_files=["res://.godot/imported/Prop_MetalFence_Ornament.fbx-52835b122c426d523a7655c67a393284.scn"]
+source_file="res://Assets/Medieval Village MegaKit[Standard]/FBX/Prop_MetalFence_Ornament.fbx"
+dest_files=["res://.godot/imported/Prop_MetalFence_Ornament.fbx-e0b69ab0ac8690d9343aa251f261cc0a.scn"]
 
 [params]
 

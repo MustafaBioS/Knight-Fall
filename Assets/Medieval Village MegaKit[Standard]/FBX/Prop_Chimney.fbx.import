@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://hjt2tvdth3cj"
-path="res://.godot/imported/Prop_Chimney.fbx-0e948c284ba2745e3b82bb8031c6c1e6.scn"
+path="res://.godot/imported/Prop_Chimney.fbx-47e78f98ef5e9c391b701e6aede512ed.scn"
 
 [deps]
 
-source_file="res://Medieval Village MegaKit[Standard]/FBX/Prop_Chimney.fbx"
-dest_files=["res://.godot/imported/Prop_Chimney.fbx-0e948c284ba2745e3b82bb8031c6c1e6.scn"]
+source_file="res://Assets/Medieval Village MegaKit[Standard]/FBX/Prop_Chimney.fbx"
+dest_files=["res://.godot/imported/Prop_Chimney.fbx-47e78f98ef5e9c391b701e6aede512ed.scn"]
 
 [params]
 

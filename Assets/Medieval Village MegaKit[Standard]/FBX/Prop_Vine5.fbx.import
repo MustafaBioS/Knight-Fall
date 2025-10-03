@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://qsi40rju8p57"
-path="res://.godot/imported/Prop_Vine5.fbx-c1a7eb716ad598104d8cf9144bc5ffe9.scn"
+path="res://.godot/imported/Prop_Vine5.fbx-f8d4cb26a4ad9d6bd9b43203b1ed0630.scn"
 
 [deps]
 
-source_file="res://Medieval Village MegaKit[Standard]/FBX/Prop_Vine5.fbx"
-dest_files=["res://.godot/imported/Prop_Vine5.fbx-c1a7eb716ad598104d8cf9144bc5ffe9.scn"]
+source_file="res://Assets/Medieval Village MegaKit[Standard]/FBX/Prop_Vine5.fbx"
+dest_files=["res://.godot/imported/Prop_Vine5.fbx-f8d4cb26a4ad9d6bd9b43203b1ed0630.scn"]
 
 [params]
 
