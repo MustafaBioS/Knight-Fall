@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://do7fcl32sd5sc"]
+
+[ext_resource type="PackedScene" uid="uid://6i7s8knm8mdq" path="res://Assets/Wooden House/Wood_house.fbx" id="1_okrnj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n87ef"]
+size = Vector3(5.9652567, 4.622406, 4.791046)
+
+[node name="House" type="Node3D"]
+
+[node name="Wood_house" parent="." instance=ExtResource("1_okrnj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10325241, 0, -0.026393771)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Wood_house"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wood_house/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00014209747, 2.3544793, 0.18627572)
+shape = SubResource("BoxShape3D_n87ef")
