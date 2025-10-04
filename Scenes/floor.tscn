@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://ctwjwyuwqw0ir"]
 
-[ext_resource type="ArrayMesh" uid="uid://u3k6j1g1tlyq" path="res://Assets/grass.res" id="1_nvnu3"]
+[ext_resource type="ArrayMesh" uid="uid://not46h48lyn4" path="res://Assets/grass.res" id="1_nvnu3"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ik5og"]
 albedo_color = Color(0, 0.26476732, 0, 1)
