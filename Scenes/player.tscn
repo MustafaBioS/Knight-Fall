@@ -1,12 +1,23 @@
-[gd_scene load_steps=2 format=3 uid="uid://d2vr1lo4awuyx"]
+[gd_scene load_steps=4 format=3 uid="uid://d2vr1lo4awuyx"]
+
+[ext_resource type="Script" uid="uid://cgwm5qximsjnr" path="res://Scenes/movement.gd" id="1_v0iea"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_f60y1"]
 radius = 0.4
 height = 1.8
 
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_f60y1"]
+radius = 0.4
+height = 1.8
+
 [node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_v0iea")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("CapsuleMesh_f60y1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_f60y1")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5233691, 0)
