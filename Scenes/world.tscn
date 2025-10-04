@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bu8gnx0fdyaja"]
+[gd_scene load_steps=12 format=3 uid="uid://bu8gnx0fdyaja"]
 
 [ext_resource type="PackedScene" uid="uid://ctwjwyuwqw0ir" path="res://Scenes/floor.tscn" id="1_a02cp"]
 [ext_resource type="PackedScene" uid="uid://d2vr1lo4awuyx" path="res://Scenes/player.tscn" id="2_go701"]
@@ -8,27 +8,42 @@
 [ext_resource type="PackedScene" uid="uid://d3fxfia6eslbd" path="res://Assets/Assets Pack/CliffProps/cliffProps3.glb" id="6_0fj1v"]
 [ext_resource type="PackedScene" uid="uid://uu1uny358u5g" path="res://Assets/Assets Pack/CliffProps/cliffProps4.glb" id="7_ikia7"]
 [ext_resource type="PackedScene" uid="uid://bncnqvscru06w" path="res://Assets/Assets Pack/CliffProps/cliffProps5.glb" id="8_7yui6"]
-[ext_resource type="PackedScene" uid="uid://7stn5pogkdb0" path="res://Scenes/trees.tscn" id="9_5v1tr"]
+[ext_resource type="PackedScene" uid="uid://7stn5pogkdb0" path="res://Scenes/tree.tscn" id="9_5v1tr"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_k7acu"]
 size = Vector3(1, 8.925278, 50)
+
+[sub_resource type="Environment" id="Environment_5v1tr"]
+background_mode = 1
+background_color = Color(0.17452446, 0.57011724, 0.7070397, 1)
+ssao_enabled = true
+ssao_intensity = 10.0
+sdfgi_enabled = true
+sdfgi_use_occlusion = true
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.01
 
 [node name="World" type="Node3D"]
 
 [node name="Floor" parent="." instance=ExtResource("1_a02cp")]
 
 [node name="Player" parent="." instance=ExtResource("2_go701")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9786738, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0111217, 0)
 collision_mask = 3
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.022547795, 0.9997458, 0, -0.9997458, 0.022547795, 0, 20.609217, 0)
+light_energy = 2.0
+light_indirect_energy = 2.0
+light_volumetric_fog_energy = 2.0
+shadow_enabled = true
+shadow_normal_bias = 0.0
 
 [node name="House" parent="." instance=ExtResource("3_5a7ea")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0, -13.718679)
 
 [node name="Cliff" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0026121, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.38802052, 0)
 
 [node name="cliffProps1" parent="Cliff" instance=ExtResource("4_k7acu")]
 transform = Transform3D(1, 0, 0, 0, 0.18161766, 0.98336935, 0, -0.98336935, 0.18161766, 20.558807, -0.07337713, 25.325945)
@@ -151,7 +166,7 @@ transform = Transform3D(-0.0018849799, -0.834856, 0.55046535, 5.9604645e-08, 0.5
 transform = Transform3D(0.52804184, -0.7853726, 0.32305104, 0.8162594, 0.57434124, 0.062072724, -0.23429206, 0.2309164, 0.944344, 11.891045, 0.19486523, -24.129662)
 
 [node name="cliffProps42" parent="Cliff" instance=ExtResource("6_0fj1v")]
-transform = Transform3D(0.6902027, -0.6906271, 0.2159962, -0.15298034, 0.15248466, 0.97639406, -0.7072606, -0.7069534, -0.00040718913, 10.314774, 1.0766897, -25.229204)
+transform = Transform3D(0.6902027, -0.6906271, 0.2159962, -0.15298034, 0.15248466, 0.97639406, -0.7072606, -0.7069534, -0.00040718913, 10.314774, 0.3420763, -25.229204)
 
 [node name="cliffProps43" parent="Cliff" instance=ExtResource("7_ikia7")]
 transform = Transform3D(0.15147394, 0.9505383, -0.2711694, 0.3831026, -0.30934766, -0.8703656, -0.91120136, 0.02795209, -0.41101182, 14.485619, 0.54899645, -25.229301)
@@ -338,3 +353,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.4846115, 0.25, 13.691242)
 
 [node name="Tree7" parent="Trees" instance=ExtResource("9_5v1tr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3504436, 0.25, 12.531184)
+
+[node name="Tree" parent="." instance=ExtResource("9_5v1tr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.767755, 0.25, 0.41748047)
+
+[node name="Tree2" parent="." instance=ExtResource("9_5v1tr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.836561, 0.25, 6.090887)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_5v1tr")
