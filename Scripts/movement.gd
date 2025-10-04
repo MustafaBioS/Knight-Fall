@@ -5,7 +5,10 @@ const SPEED = 6.0
 const JUMP_VELOCITY = 4.5
 
 var sensitivity = 0.003
+var cd = false
 @onready var camera = $FP
+@onready var animation_player = $AnimationPlayer
+@onready var timer = $Timer
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -38,6 +41,17 @@ func _unhandled_input(event):
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
+func _attack():
+	if Input.is_action_just_pressed('attack') and cd == false:
+		animation_player.play("SwordSwing")
+		cd = true
+		timer.start()
+
 func _process(delta):
+	_attack()
 	if Input.is_action_just_pressed('escape'):
 		get_tree().quit()
+
+
+func _on_timer_timeout():
+	cd = false
