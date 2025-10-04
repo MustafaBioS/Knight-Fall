@@ -5,7 +5,7 @@ const SPEED = 6.0
 const JUMP_VELOCITY = 4.5
 
 var sensitivity = 0.003
-@onready var camera = $Camera3D
+@onready var camera = $FP
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
