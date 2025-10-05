@@ -1,4 +1,4 @@
-[gd_scene load_steps=64 format=4 uid="uid://cn6bhwgo5o6my"]
+[gd_scene load_steps=68 format=4 uid="uid://cn6bhwgo5o6my"]
 
 [ext_resource type="Script" uid="uid://c1ulkpd5nfqbn" path="res://Scripts/enemy.gd" id="1_dxifv"]
 [ext_resource type="Texture2D" uid="uid://d2pasv4q1yg33" path="res://medieval_knight__sculpture__game_ready_0.png" id="1_e1ltt"]
@@ -10,6 +10,68 @@
 [ext_resource type="Texture2D" uid="uid://545k3eq5gc7v" path="res://medieval_knight__sculpture__game_ready_6.png" id="7_5hcft"]
 [ext_resource type="Texture2D" uid="uid://byqxl86nkir63" path="res://medieval_knight__sculpture__game_ready_7.png" id="8_nnovl"]
 [ext_resource type="Texture2D" uid="uid://brahe7gy80u55" path="res://medieval_knight__sculpture__game_ready_8.png" id="9_jmwgi"]
+[ext_resource type="PackedScene" uid="uid://drgnvm300tf20" path="res://Assets/Assets Pack/Sword.glb" id="11_haro7"]
+
+[sub_resource type="Animation" id="Animation_haro7"]
+resource_name = "SwordSwing"
+length = 0.7
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Enemy/SwordPoint/Sword:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.35, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(-0.27474433, -1.7679291, 2.7010038), Vector3(-0.27401668, -1.7680185, 2.4486969), Vector3(-0.27474433, -1.7679291, 2.7010038)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Enemy/SwordPoint/Sword:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.35, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(-0.040485173, -0.019755602, -1.5629336), Vector3(-0.06077379, -0.019755602, -1.3441626), Vector3(-0.040485173, -0.019755602, -1.5629336)]
+}
+
+[sub_resource type="Animation" id="Animation_56vhr"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Enemy/SwordPoint/Sword:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-0.27474433, -1.7679291, 2.7010038)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Enemy/SwordPoint/Sword:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-0.040485173, -0.019755602, -1.5629336)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_56vhr"]
+_data = {
+&"RESET": SubResource("Animation_56vhr"),
+&"SwordSwing": SubResource("Animation_haro7")
+}
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_exd53"]
 resource_name = "blinn2"
@@ -1467,10 +1529,23 @@ radius = 12.446289
 radius = 1.8745117
 
 [node name="Node3D" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 
 [node name="Enemy" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0084763765, 0)
+transform = Transform3D(0.845, 0, 0, 0, 0.845, 0, 0, 0, 0.845, 0, 0, 0)
 script = ExtResource("1_dxifv")
+
+[node name="SwordPoint" type="Node3D" parent="Enemy"]
+transform = Transform3D(1.183036, 0, 0.030606976, 0, 1.1834319, 0, -0.030606976, 0, 1.183036, -0.30790344, 1.9427527, 2.3009264)
+
+[node name="Sword" parent="Enemy/SwordPoint" instance=ExtResource("11_haro7")]
+transform = Transform3D(0.43592307, -0.23566633, -1.4157804, 0.6157156, -1.3058653, 0.4069515, -1.2964815, -0.6994114, -0.28276914, -0.040485173, -0.019755602, -1.5629336)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Enemy"]
+root_node = NodePath("../..")
+libraries = {
+&"": SubResource("AnimationLibrary_56vhr")
+}
 
 [node name="Sketchfab_Scene" type="Node3D" parent="Enemy"]
 
@@ -2051,6 +2126,7 @@ mesh = SubResource("ArrayMesh_18rug")
 skin = SubResource("Skin_jy1ec")
 
 [node name="Object_85" type="MeshInstance3D" parent="Enemy/Sketchfab_Scene/Sketchfab_model/985ec9739c20496b97be5cb1a0679ffb_fbx/Object_2/RootNode/Object_4/Skeleton3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.5762787e-06, 7.940934e-22)
 mesh = SubResource("ArrayMesh_fqi5y")
 skin = SubResource("Skin_jy1ec")
 
@@ -2220,6 +2296,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 7.5497894e-08, 0, -7.5497894e-08, 1, 0, 9
 [node name="knee_low" type="Node3D" parent="Enemy/Sketchfab_Scene/Sketchfab_model/985ec9739c20496b97be5cb1a0679ffb_fbx/Object_2/RootNode/Object_4"]
 transform = Transform3D(1, 0, 0, 0, 1, 7.5497894e-08, 0, -7.5497894e-08, 1, 0, 9.313226e-08, -5.551115e-15)
 
+[node name="knee_low2" type="Node3D" parent="Enemy/Sketchfab_Scene/Sketchfab_model/985ec9739c20496b97be5cb1a0679ffb_fbx/Object_2/RootNode/Object_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 7.5497894e-08, 0, -7.5497894e-08, 1, 0, 9.313226e-08, -5.551115e-15)
+
 [node name="wing01_low" type="Node3D" parent="Enemy/Sketchfab_Scene/Sketchfab_model/985ec9739c20496b97be5cb1a0679ffb_fbx/Object_2/RootNode/Object_4"]
 transform = Transform3D(1, 0, 0, 0, 1, 7.5497894e-08, 0, -7.5497894e-08, 1, 0, 9.313226e-08, -5.551115e-15)
 
@@ -2340,7 +2419,7 @@ libraries = {
 }
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Enemy"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03459227, 1.3701324, 0)
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0.040979344, 1.3676689, -0.0037237029)
 shape = SubResource("CapsuleShape3D_e1ltt")
 
 [node name="ChaseArea" type="Area3D" parent="Enemy"]
@@ -2353,6 +2432,8 @@ shape = SubResource("CylinderShape3D_dxifv")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Enemy/AttackArea"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14113843, 0, -0.52495205)
 shape = SubResource("CylinderShape3D_pwjut")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="Enemy"]
 
 [connection signal="body_entered" from="Enemy/ChaseArea" to="Enemy" method="_on_chase_area_body_entered"]
 [connection signal="body_exited" from="Enemy/ChaseArea" to="Enemy" method="_on_chase_area_body_exited"]

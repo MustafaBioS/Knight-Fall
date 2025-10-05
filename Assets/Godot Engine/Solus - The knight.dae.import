@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://d3ple528jfsuc"
-path="res://.godot/imported/Solus - The knight.dae-580a0bbf17f8399fd963463534d9e33c.scn"
+path="res://.godot/imported/Solus - The knight.dae-6131101611523f5cab85bbb0fd517c99.scn"
 
 [deps]
 
-source_file="res://Solus - The knight.dae"
-dest_files=["res://.godot/imported/Solus - The knight.dae-580a0bbf17f8399fd963463534d9e33c.scn"]
+source_file="res://Assets/Godot Engine/Solus - The knight.dae"
+dest_files=["res://.godot/imported/Solus - The knight.dae-6131101611523f5cab85bbb0fd517c99.scn"]
 
 [params]
 
