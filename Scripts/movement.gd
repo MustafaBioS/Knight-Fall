@@ -15,6 +15,8 @@ var cd = false
 var gold = 0
 var hp = 100
 var mhp = 100
+var damage = 30
+var target = []
 
 func player():
 	pass
@@ -67,6 +69,17 @@ func _process(delta):
 	if Input.is_action_just_pressed('escape'):
 		get_tree().quit()
 
+func _deal_dmg():
+	for enemies in target:
+		enemies.hp -= damage
 
 func _on_timer_timeout():
 	cd = false
+
+
+func _on_attack_zone_body_entered(body: Node3D) -> void:
+	if body.has_method("enemy"):
+		target.append(body)
+func _on_attack_zone_body_exited(body: Node3D) -> void:
+	if body.has_method("enemy"):
+		target.erase(body)
