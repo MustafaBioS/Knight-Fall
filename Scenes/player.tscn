@@ -1,7 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://d2vr1lo4awuyx"]
+[gd_scene load_steps=10 format=3 uid="uid://d2vr1lo4awuyx"]
 
 [ext_resource type="Script" uid="uid://cgwm5qximsjnr" path="res://Scripts/movement.gd" id="1_v0iea"]
 [ext_resource type="PackedScene" uid="uid://drgnvm300tf20" path="res://Assets/Assets Pack/Sword.glb" id="2_cvnsp"]
+[ext_resource type="Texture2D" uid="uid://h41vfa0pgt1o" path="res://Assets/Assets Pack/sprites/healthbarbacunder.png" id="3_vgqql"]
+[ext_resource type="Texture2D" uid="uid://bpxo3mo1lkb72" path="res://Assets/Assets Pack/sprites/healthbarover.png" id="4_fkybt"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_f60y1"]
 radius = 0.4
@@ -10,6 +12,33 @@ height = 1.8
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_f60y1"]
 radius = 0.4
 height = 1.8
+
+[sub_resource type="Animation" id="Animation_6t5aa"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("FP/SwordPoint:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.053, 0, -0.069)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("FP/SwordPoint:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-0.080285124, -1.6999507, -2.7419124)]
+}
 
 [sub_resource type="Animation" id="Animation_cvnsp"]
 resource_name = "SwordSwing"
@@ -37,33 +66,6 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Vector3(-0.080285124, -1.6999507, -2.7419124), Vector3(-0.08028515, -1.6580628, -2.1642082), Vector3(-0.080285124, -1.6999507, -2.7419124)]
-}
-
-[sub_resource type="Animation" id="Animation_6t5aa"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("FP/SwordPoint:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0.053, 0, -0.069)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("FP/SwordPoint:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(-0.080285124, -1.6999507, -2.7419124)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_vgqql"]
@@ -97,5 +99,23 @@ libraries = {
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.8
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="HPBar" type="TextureProgressBar" parent="HUD"]
+offset_left = 40.0
+offset_top = 31.0
+offset_right = 279.0
+offset_bottom = 71.0
+texture_under = ExtResource("3_vgqql")
+texture_progress = ExtResource("4_fkybt")
+
+[node name="CoinLabel" type="Label" parent="HUD"]
+offset_left = 1075.0
+offset_top = 593.0
+offset_right = 1115.0
+offset_bottom = 627.0
+theme_override_font_sizes/font_size = 24
+text = "0"
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
