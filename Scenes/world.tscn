@@ -1,4 +1,4 @@
-[gd_scene load_steps=76 format=4 uid="uid://bu8gnx0fdyaja"]
+[gd_scene load_steps=78 format=4 uid="uid://bu8gnx0fdyaja"]
 
 [ext_resource type="PackedScene" uid="uid://d2vr1lo4awuyx" path="res://Scenes/player.tscn" id="2_go701"]
 [ext_resource type="PackedScene" uid="uid://do7fcl32sd5sc" path="res://Scenes/house.tscn" id="3_5a7ea"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://b5nqesct4d8ka" path="res://Assets/Castel Pack/Castles_and_Forts_Walls.png" id="10_7yui6"]
 [ext_resource type="Texture2D" uid="uid://cmt2fok0ewqca" path="res://Assets/Castel Pack/Castles_and_Forts_Window_iron.png" id="11_c5t2i"]
 [ext_resource type="Texture2D" uid="uid://dbnxoldx4a6i6" path="res://Assets/Castel Pack/Castles_and_Forts_Window_1.png" id="12_e0ngr"]
+[ext_resource type="PackedScene" uid="uid://djed75qn66lnt" path="res://Scenes/warlord.tscn" id="13_c5t2i"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_0fj1v"]
 
@@ -24,13 +25,18 @@ center_offset = Vector3(-25, 0, 0)
 orientation = 1
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5v1tr"]
-size = Vector3(100, 100, 100)
+size = Vector3(150, 0.5, 150)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7yui6"]
 albedo_color = Color(0.8760607, 0.44866788, 3.85046e-07, 1)
 
+[sub_resource type="QuadMesh" id="QuadMesh_e0ngr"]
+size = Vector2(7.5, 30)
+center_offset = Vector3(0, 0.1, 0)
+orientation = 1
+
 [sub_resource type="QuadMesh" id="QuadMesh_c5t2i"]
-size = Vector2(7.5, 65)
+size = Vector2(7.5, 90)
 center_offset = Vector3(0, 0.1, 0)
 orientation = 1
 
@@ -969,13 +975,16 @@ transform = Transform3D(-0.99999994, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0,
 [node name="House3" parent="Grass/NavigationRegion3D2/Houses" instance=ExtResource("3_5a7ea")]
 transform = Transform3D(0.9999998, 0, 0, 0, 1, 0, 0, 0, 0.9999998, -6.817512, 0, -20.748354)
 
+[node name="House4" parent="Grass/NavigationRegion3D2/Houses" instance=ExtResource("3_5a7ea")]
+transform = Transform3D(-0.99999994, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -0.99999994, 43.079872, 0, 1.5386984)
+
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Grass/NavigationRegion3D2"]
 material_override = SubResource("StandardMaterial3D_ikia7")
 mesh = SubResource("QuadMesh_7yui6")
 skeleton = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Grass"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, -9.298279)
 shape = SubResource("BoxShape3D_5v1tr")
 
 [node name="Roads" type="Node3D" parent="."]
@@ -983,28 +992,28 @@ shape = SubResource("BoxShape3D_5v1tr")
 [node name="Road" type="StaticBody3D" parent="Roads"]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Roads/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.228462)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -13.306441)
 material_override = SubResource("StandardMaterial3D_7yui6")
-mesh = SubResource("QuadMesh_c5t2i")
+mesh = SubResource("QuadMesh_e0ngr")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Roads/Road"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.3706169, 0)
 shape = SubResource("BoxShape3D_5v1tr")
 
 [node name="Road2" type="StaticBody3D" parent="Roads"]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -21.192, 0, 1.3)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Roads/Road2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.228462)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.9604645e-07, 0, 16.25352)
 material_override = SubResource("StandardMaterial3D_7yui6")
 mesh = SubResource("QuadMesh_c5t2i")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Roads/Road2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -31.337)
 shape = SubResource("BoxShape3D_5v1tr")
 
 [node name="Player" parent="." instance=ExtResource("2_go701")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0111217, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1779925, -26.785389)
 collision_mask = 3
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
@@ -1313,7 +1322,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.572924, 0.25, 15.841166)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.289944, 0.24999905, -17.242851)
 
 [node name="Tree3" parent="Trees" instance=ExtResource("9_5v1tr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.682816, 0.25, 5.2237053)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.463047, 0.25, 14.607375)
 
 [node name="Tree4" parent="Trees" instance=ExtResource("9_5v1tr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.878696, 0.25000095, -9.3758335)
@@ -1331,7 +1340,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0428505, 0.25, 12.531184)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.733109, 0.25, -8.727727)
 
 [node name="Tree9" parent="Trees" instance=ExtResource("9_5v1tr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.836561, 0.25, 6.090887)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.836561, 0.25, 18.831455)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_5v1tr")
@@ -3316,3 +3325,6 @@ skeleton = NodePath("")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.831524, 2.8715248, -3.5169933)
 mesh = SubResource("ArrayMesh_3g7p7")
 skeleton = NodePath("")
+
+[node name="Warlord" parent="." instance=ExtResource("13_c5t2i")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 37.7709, 1.0824467, 1.4153261)

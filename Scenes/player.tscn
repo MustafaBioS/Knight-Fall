@@ -12,7 +12,7 @@ height = 1.8
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_f60y1"]
 radius = 0.4
-height = 3.4681396
+height = 2.0538025
 
 [sub_resource type="Animation" id="Animation_6t5aa"]
 length = 0.001
@@ -98,7 +98,7 @@ script = ExtResource("1_v0iea")
 mesh = SubResource("CapsuleMesh_f60y1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.09849846, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.052645802, 0)
 shape = SubResource("CapsuleShape3D_f60y1")
 
 [node name="FP" type="Camera3D" parent="."]
