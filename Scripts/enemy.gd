@@ -8,17 +8,27 @@ var speed = 2
 var accel = 10
 var gravity = 9.8
 var target = null
+var damage = 20
+var attacking = false
 
 @onready var navagent = $"NavigationAgent3D"
-@onready var animation = $"AnimationPlayer"
+@onready var animation = $Sketchfab_Scene/AnimationPlayer
+@onready var timer = $Timer
 
+func enemy():
+	pass
+	
+func _process(delta):
+	if hp <= 0:
+		state = States.die
+		queue_free()
 
 func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y -= gravity
 	if state == States.idle:
 		velocity = Vector3.ZERO
-		animation.play("")
+		animation.play("idle")
 	elif state == States.chase:
 		look_at(Vector3(target.global_position.x, global_position.y, target.global_position.z), Vector3.UP, true)
 		navagent.target_position = target.global_position
@@ -29,7 +39,13 @@ func _physics_process(delta):
 	elif state == States.attack:
 		look_at(Vector3(target.global_position.x, global_position.y, target.global_position.z), Vector3.UP, true)
 		velocity = Vector3.ZERO
-		animation.play("SwordSwing")
+		if attacking == false:
+			animation.play("attack")
+			attacking = true
+			timer.wait_time = 1.0
+			timer.one_shot = true
+			timer.start()
+		
 	elif state == States.die:
 		velocity = Vector3.ZERO
 		animation.play("")
@@ -37,20 +53,24 @@ func _physics_process(delta):
 	move_and_slide()
 	
 func _on_chase_area_body_entered(body: Node3D) -> void:
-	if body.has_method("player"):
+	if body.has_method("player") and state != States.die:
 		target = body
 		state = States.chase
-
 func _on_chase_area_body_exited(body: Node3D) -> void:
 	if body.has_method("player"):
 		target = null
 		state = States.idle
-
 func _on_attack_area_body_entered(body: Node3D) -> void:
-	if body.has_method("player"):
-		
+	if body.has_method("player") and state != States.die:
 		state = States.attack
 func _on_attack_area_body_exited(body: Node3D) -> void:
-	if body.has_method("player"):
-		
+	if body.has_method("player") and state != States.die:
 		state = States.chase	
+
+func _attack():
+	target.hp -= damage
+
+
+func _on_timer_timeout() -> void:
+	attacking = false
+	
