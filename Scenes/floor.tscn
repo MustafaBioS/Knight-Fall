@@ -1,13 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://ctwjwyuwqw0ir"]
+[gd_scene load_steps=5 format=3 uid="uid://ctwjwyuwqw0ir"]
 
 [ext_resource type="ArrayMesh" uid="uid://not46h48lyn4" path="res://Assets/grass.res" id="1_nvnu3"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ik5og"]
-albedo_color = Color(0, 0.26476732, 0, 1)
-
-[sub_resource type="QuadMesh" id="QuadMesh_ik5og"]
-size = Vector2(50, 50)
-orientation = 1
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nvnu3"]
 albedo_color = Color(1.0588765e-06, 0.4493385, 1.92523e-07, 1)
@@ -22,10 +15,6 @@ buffer = PackedFloat32Array(-0.9955568, 0, -0.10424902, -6.9983635, 0, 1.001, 0,
 size = Vector3(50, 0.5, 50)
 
 [node name="Floor" type="StaticBody3D"]
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-material_override = SubResource("StandardMaterial3D_ik5og")
-mesh = SubResource("QuadMesh_ik5og")
 
 [node name="MultiMeshInstance3D" type="MultiMeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25092876, 0)
