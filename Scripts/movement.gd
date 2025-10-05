@@ -9,6 +9,15 @@ var cd = false
 @onready var camera = $FP
 @onready var animation_player = $AnimationPlayer
 @onready var timer = $Timer
+@onready var HP = $HUD/HPBar
+@onready var Coin = $HUD/CoinLabel
+
+var gold = 0
+var hp = 100
+var mhp = 100
+
+func player():
+	pass
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -39,6 +48,7 @@ func _unhandled_input(event):
 		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-60), deg_to_rad(70))
 
 func _ready():
+	HP.max_value = 100
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 func _attack():
@@ -47,7 +57,12 @@ func _attack():
 		cd = true
 		timer.start()
 
+func _update_hud():
+	HP.value = hp
+	Coin.text = str(gold) 
+
 func _process(delta):
+	_update_hud()
 	_attack()
 	if Input.is_action_just_pressed('escape'):
 		get_tree().quit()
