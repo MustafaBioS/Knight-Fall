@@ -4,12 +4,15 @@ enum States {attack, idle, chase, die}
 
 var state = States.idle
 var hp = 75
-var speed = 2
+var speed = 4
 var accel = 10
 var gravity = 9.8
 var target = null
 var damage = 20
 var attacking = false
+var rng = RandomNumberGenerator.new()
+var value = rng.randi_range(1, 5)
+@export var dialogue: DialogueResource;
 
 @onready var navagent = $"NavigationAgent3D"
 @onready var animation = $Sketchfab_Scene/AnimationPlayer
@@ -70,6 +73,9 @@ func _on_attack_area_body_exited(body: Node3D) -> void:
 func _attack():
 	target.hp -= damage
 
+func _give_loot():
+	target.gold += value
+	DialogueManager.set_variable_value("coins", target.gold)
 
 func _on_timer_timeout() -> void:
 	attacking = false

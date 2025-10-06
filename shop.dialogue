@@ -1,0 +1,56 @@
+~ start
+ShopKeeper: Hi there! How can I help you today?
+
+- Buy Items => buy_menu
+- Sell Items => sell_menu
+- End the conversation => END
+
+
+~ buy_menu
+ShopKeeper: Sure thing. What would you like to buy?
+
+<<if GameState.coins >= 50>>
+- Legendary Sword
+	ShopKeeper: You bought the Legendary Sword!
+	<<set GameState.coins = GameState.coins - 50>>
+	<<GameState.inventory.append("Legendary Sword")>>
+	=> start
+<<else>>
+ShopKeeper: You don’t have enough gold.
+=> start
+<</if>>
+
+<<if GameState.coins >= 20>>
+- Medicine
+	ShopKeeper: You bought Medicine!
+	<<set GameState.coins -= 20>>
+	=> start
+<<else>>
+ShopKeeper: You don’t have enough gold.
+=> start
+<</if>>
+
+
+~ sell_menu
+ShopKeeper: What would you like to sell?
+
+<<if "Legendary Sword" in GameState.inventory>>
+- Legendary Sword
+	ShopKeeper: Thanks! I’ll take that.
+	<<set GameState.coins += 25>>
+	<<set GameState.inventory.remove_item("Legendary Sword")>>
+	=> start
+<</if>>
+
+<<if "Medicine" in GameState.inventory>>
+- Medicine
+	ShopKeeper: Thanks! I’ll take that.
+	<<set GameState.coins += 10>>
+	<<set GameState.inventory.remove_item("Medicine")>>
+	=> start
+<</if>>
+
+<<if not ("Legendary Sword" in GameState.inventory or "Medicine" in GameState.inventory)>>
+ShopKeeper: You have no items to sell.
+=> start
+<</if>>
