@@ -150,5 +150,13 @@ texture = ExtResource("5_x3wgy")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.023432076, 0, -0.79819655)
 shape = SubResource("BoxShape3D_vgqql")
 
+[node name="Dialogue" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="Dialogue"]
+offset_left = 324.0
+offset_top = 417.0
+offset_right = 804.0
+offset_bottom = 457.0
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="body_entered" from="AttackZone" to="." method="_on_attack_zone_body_entered"]
