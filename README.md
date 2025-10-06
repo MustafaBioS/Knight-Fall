@@ -2,10 +2,10 @@
 Knight Fall is my first 3D Game, it's a game where you play as a knight that can do sieges.
 ---
 **Keybinds**
-> W -> Move Forward /n
-> A -> Move Left\n
-> S -> Move Backward\n
-> D -> Move Right\n
-> Space -> Jump\n
-> E -> Interact\n
-> LMB -> Attack\n
+> W -> Move Forward<br>
+> A -> Move Left<br>
+> S -> Move Backward<br>
+> D -> Move Right<br>
+> Space -> Jump<br>
+> E -> Interact<br>
+> LMB -> Attack<br>
