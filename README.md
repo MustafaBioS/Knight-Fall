@@ -9,6 +9,9 @@ Knight Fall is my first 3D Game, it's a game where you play as a knight that can
 > Space -> Jump<br>
 > E -> Interact<br>
 > LMB -> Attack<br>
+> I -> Show Inventory<br>
+> R -> Switch Weapon<br>
+> ESC -> Exit
 ---
 **<h1>Notes</h1>**
 **This is my first 3D  game ever but i really enjoyed 3D game dev
