@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://qixxwuxvjxfp"
+path="res://.godot/imported/warlordDialogue.dialogue-0ae136b5fe6b0db0f65144f37c4ad266.tres"
+
+[deps]
+
+source_file="res://warlordDialogue.dialogue"
+dest_files=["res://.godot/imported/warlordDialogue.dialogue-0ae136b5fe6b0db0f65144f37c4ad266.tres"]
+
+[params]
+
+defaults=true

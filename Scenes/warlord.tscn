@@ -1,9 +1,11 @@
-[gd_scene load_steps=10 format=4 uid="uid://djed75qn66lnt"]
+[gd_scene load_steps=12 format=4 uid="uid://djed75qn66lnt"]
 
 [ext_resource type="Script" uid="uid://ekc7w1pxdc1q" path="res://Scripts/warlord.gd" id="1_7nsgq"]
+[ext_resource type="Resource" uid="uid://qixxwuxvjxfp" path="res://warlordDialogue.dialogue" id="2_aid5p"]
 [ext_resource type="Texture2D" uid="uid://c401s1lf131bv" path="res://Assets/Knight Medieval Pack/Armor.Asset/Armor_0.png" id="2_kvolj"]
 [ext_resource type="Texture2D" uid="uid://dx6d3hacs6poo" path="res://Assets/Knight Medieval Pack/Armor.Asset/Armor_1.png" id="3_7nsgq"]
 [ext_resource type="PackedScene" uid="uid://c37e8o0wsjj21" path="res://Assets/Knight Medieval Pack/Spear.Asset/Spear.fbx" id="4_7nsgq"]
+[ext_resource type="Script" uid="uid://2nwm0tcones6" path="res://Scenes/talkarea.gd" id="4_sev5y"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ploar"]
 resource_name = "Material.001"
@@ -62,6 +64,7 @@ radius = 1.3374023
 [node name="Warlord" type="CharacterBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0084763765, 0)
 script = ExtResource("1_7nsgq")
+dialogue = ExtResource("2_aid5p")
 
 [node name="Armor" type="Node3D" parent="Warlord"]
 
@@ -75,6 +78,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.09399414, 0)
 shape = SubResource("CapsuleShape3D_aid5p")
 
 [node name="TalkArea" type="Area3D" parent="Warlord"]
+script = ExtResource("4_sev5y")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Warlord/TalkArea"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.023078442, 0, -0.40141553)

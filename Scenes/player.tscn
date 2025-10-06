@@ -1,10 +1,13 @@
-[gd_scene load_steps=12 format=3 uid="uid://d2vr1lo4awuyx"]
+[gd_scene load_steps=15 format=3 uid="uid://d2vr1lo4awuyx"]
 
 [ext_resource type="Script" uid="uid://cgwm5qximsjnr" path="res://Scripts/movement.gd" id="1_v0iea"]
+[ext_resource type="Resource" uid="uid://ni0j0p6sl3fk" path="res://shop.dialogue" id="2_3smsa"]
 [ext_resource type="PackedScene" uid="uid://drgnvm300tf20" path="res://Assets/Assets Pack/Sword.glb" id="2_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://h41vfa0pgt1o" path="res://Assets/Assets Pack/sprites/healthbarbacunder.png" id="3_vgqql"]
 [ext_resource type="Texture2D" uid="uid://bpxo3mo1lkb72" path="res://Assets/Assets Pack/sprites/healthbarover.png" id="4_fkybt"]
 [ext_resource type="Texture2D" uid="uid://bj4qjx7an2tvh" path="res://siegecoin.png" id="5_x3wgy"]
+[ext_resource type="Texture2D" uid="uid://bf555mtegx7v1" path="res://Assets/Castel Pack/Textures/Iron.png" id="6_x3wgy"]
+[ext_resource type="PackedScene" uid="uid://670mc2dov6mf" path="res://Assets/Assets Pack/tavernprops/bottlePurp.glb" id="8_8erm5"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_f60y1"]
 radius = 0.4
@@ -12,7 +15,7 @@ height = 1.8
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_f60y1"]
 radius = 0.4
-height = 2.0538025
+height = 1.9
 
 [sub_resource type="Animation" id="Animation_6t5aa"]
 length = 0.001
@@ -51,10 +54,10 @@ tracks/0/path = NodePath("FP/SwordPoint:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.33333334, 0.7),
+"times": PackedFloat32Array(0, 0.35, 0.7),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Vector3(0.053, 0, -0.069), Vector3(0.053, -0.01, -0.094), Vector3(0.053, 0, -0.069)]
+"values": [Vector3(0.053, 0, -0.069), Vector3(0.053, 0, -0.104), Vector3(0.053, 0, -0.069)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -63,10 +66,10 @@ tracks/1/path = NodePath("FP/SwordPoint:rotation")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(-0.033333335, 0.33333334, 0.6999999),
+"times": PackedFloat32Array(0, 0.35, 0.7),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Vector3(-0.080285124, -1.6999507, -2.7419124), Vector3(-0.08028515, -1.6580628, -2.1642082), Vector3(-0.080285124, -1.6999507, -2.7419124)]
+"values": [Vector3(-0.080285124, -1.6999507, -2.7419124), Vector3(-0.08028515, -1.6999507, -2.0176005), Vector3(-0.080285124, -1.6999507, -2.7419124)]
 }
 tracks/2/type = "method"
 tracks/2/imported = false
@@ -93,6 +96,7 @@ _data = {
 
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_v0iea")
+dialogue = ExtResource("2_3smsa")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("CapsuleMesh_f60y1")
@@ -144,6 +148,22 @@ offset_bottom = 1235.0
 scale = Vector2(0.03, 0.03)
 texture = ExtResource("5_x3wgy")
 
+[node name="TextureRect2" type="TextureRect" parent="HUD"]
+visible = false
+offset_left = 417.0
+offset_top = 107.0
+offset_right = 727.0
+offset_bottom = 551.0
+texture = ExtResource("6_x3wgy")
+
+[node name="Inventory" type="Label" parent="HUD/TextureRect2"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 15.0
+offset_right = 285.0
+offset_bottom = 427.0
+theme_override_font_sizes/font_size = 26
+
 [node name="AttackZone" type="Area3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="AttackZone"]
@@ -152,11 +172,9 @@ shape = SubResource("BoxShape3D_vgqql")
 
 [node name="Dialogue" type="CanvasLayer" parent="."]
 
-[node name="Panel" type="Panel" parent="Dialogue"]
-offset_left = 324.0
-offset_top = 417.0
-offset_right = 804.0
-offset_bottom = 457.0
+[node name="bottlePurp" parent="." instance=ExtResource("8_8erm5")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0.29829592, 0.11432999, -0.3481117)
+visible = false
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="body_entered" from="AttackZone" to="." method="_on_attack_zone_body_entered"]
