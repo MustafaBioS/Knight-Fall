@@ -16,4 +16,4 @@ Knight Fall is my first 3D Game, it's a game where you play as a knight that can
 **<h1>Notes</h1>**
 **This is my first 3D  game ever but i really enjoyed 3D game dev
 so i'll most likely continue on this next week since i had exams
-this week so i couldn't do much.**
+this week so i couldn't do much, But hopefully i'll finish it up next week.**
